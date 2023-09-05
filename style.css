@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+  width: 100%;
+ 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+  font-weight: normal;
+  font-style: normal;
+}
+.primary {
+  width: 1000px;
+  margin: auto;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 250px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.container {
+  margin: 0;
+  width: 500px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1 {
+  display: inline-block;
+  width: 100%;
+  font-size: 50px;
+  margin-top: 200px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.box1 {
+  position: absolute;
+  left: 0;
+}
+
+.box2 {
+  background-image: url("https://media.tenor.com/JK1ahHABmYcAAAAC/rain-aesthetic.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+}
+
+.box3 {
+  background-image: url("https://media0.giphy.com/media/13juRqPzSYGLT2/giphy.gif?cid=ecf05e472dbgfsb77tc7rc7fohay076d8hg6y7u5r1xb8e84&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.box4 {
+  position: absolute;
+  right: 0;
+  transform: translateY(100%);
+}
+
+.primary:hover .box1 {
+  transform: translateY(100%);
+}
+
+.primary:hover .box2 {
+  transform: translateY(-100%);
+}
+
+.primary:hover .box3 {
+  transform: translateY(0%);
+}
+
+.primary:hover .box4 {
+  transform: translateY(0%);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
